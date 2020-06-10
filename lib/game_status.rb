@@ -20,6 +20,7 @@ def won?(board)
     board[arr[0]] == board[arr[1]] &&
     board[arr[1]] == board[arr[2]] &&
     position_taken?(board, arr[0])
+  end
 end
 
 def full?(board)

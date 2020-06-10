@@ -16,11 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_com|
-    win_com_el = win_com.map {|idx| board[idx]}
-    return win_com if win_com_el.all?("X") || win_com_el.all?("O")
-  end
-  return false
+  WIN_COMBINATIONS.detect do |arr|
+    
 end
 
 def full?(board)
